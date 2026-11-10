@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#8D6E63">
+<link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2964/2964514.png">
+  
 <title>JP WOOD DESIGN - Kigali</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
@@ -117,5 +120,7 @@ function setLang(lang){
   document.getElementById('btn-fr').classList.toggle('active', lang==='fr');
 }
 </script>
-</body>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
+</script></body>
 </html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JP WOOD DESIGN - Kigali</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#fdf8f2;color:#222}
+header{background:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.logo{font-weight:900;font-size:22px}
+.logo span{color:#8B5A2B}
+nav a{margin:0 10px;text-decoration:none;color:#222;font-weight:700}
+.lang button{padding:8px 14px;border:none;cursor:pointer;border-radius:20px;font-weight:800}
+.lang .active{background:#8B5A2B;color:#fff}
+.hero{background:#2b1d12;color:#fff;padding:60px 20px;text-align:center}
+.hero h1{font-size:38px;margin:15px 0}
+.hero p{font-size:18px;opacity:.9}
+.btn{display:inline-block;margin:15px 8px;padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:800}
+.btn-brown{background:#8B5A2B;color:#fff}
+.btn-white{background:#fff;color:#222}
+.section{padding:50px 20px;max-width:1100px;margin:auto}
+.section h2{text-align:center;font-size:30px;margin-bottom:10px}
+.section p.sub{text-align:center;color:#777;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.1);text-align:center;padding-bottom:20px}
+.card img{width:100%;height:220px;object-fit:cover;background:#e8ddd0}
+.card h3{margin:15px 0 5px}
+.price{color:#8B5A2B;font-weight:900;font-size:20px;margin:10px 0}
+.box{background:#fff;padding:25px;border-radius:16px;margin-top:20px}
+footer{background:#8B5A2B;color:#fff;text-align:center;padding:20px}
+input,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:10px}
+.contact-line{font-size:18px;margin:8px 0}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">JP <span>WOOD DESIGN</span></div>
+<nav>
+<a href="#" data-en="Home" data-fr="Accueil">Home</a>
+<a href="#catalogue" data-en="Catalogue" data-fr="Catalogue">Catalogue</a>
+<a href="#orders" data-en="Orders" data-fr="Commandes">Orders</a>
+<a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+</nav>
+<div class="lang">
+<button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+<button id="btn-fr" onclick="setLang('fr')">FR</button>
+</div>
+</header>
+
+<div class="hero">
+<h2>JP WOOD DESIGN</h2>
+<h1 data-en="Handmade Wooden Furniture in Kigali" data-fr="Mobilier artisanal fait main à Kigali">Handmade Wooden Furniture in Kigali</h1>
+<p data-en="Solid wood creations, made to order. Quality, handmade finish, delivered in Kigali." data-fr="Créations en bois massif, sur mesure. Qualité, finition artisanale, livré à Kigali.">Solid wood creations, made to order. Quality, handmade finish, delivered in Kigali.</p>
+<a class="btn btn-brown" href="#catalogue" data-en="View Catalogue" data-fr="Voir le Catalogue">View Catalogue</a>
+<a class="btn btn-white" href="https://wa.me/243975417780" data-en="Order on WhatsApp" data-fr="Commander sur WhatsApp">Order on WhatsApp</a>
+</div>
+
+<div class="section" id="catalogue">
+<h2 data-en="Our Best Sellers" data-fr="Nos Produits Phares">Our Best Sellers</h2>
+<p class="sub" data-en="Discover our most popular handcrafted pieces" data-fr="Découvrez nos créations artisanales les plus populaires">Discover our most popular handcrafted pieces</p>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600" alt="Table">
+<h3 data-en="JP Classic Coffee Table" data-fr="Table basse JP Classic">JP Classic Coffee Table</h3>
+<p>90x50x40cm • Solid wood</p>
+<div class="price">85,000 — 120,000 RWF</div>
+<a class="btn btn-brown" href="https://wa.me/243975417780?text=Bonjour%20JP%2C%20je%20veux%20la%20Table%20JP%20Classic" data-en="Order" data-fr="Commander">Order</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594620302200-9a762244a156?w=600" alt="Shelf">
+<h3 data-en="JP Wall Shelf" data-fr="Étagère murale JP Wall">JP Wall Shelf</h3>
+<p>80x20cm • Wall shelf</p>
+<div class="price">35,000 — 50,000 RWF</div>
+<a class="btn btn-brown" href="https://wa.me/243975417780?text=Bonjour%20JP%2C%20je%20veux%20l%27Etagere%20JP%20Wall" data-en="Order" data-fr="Commander">Order</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=600" alt="Stool">
+<h3 data-en="JP Stool" data-fr="Tabouret JP Stool">JP Stool</h3>
+<p>45cm high • Handmade stool</p>
+<div class="price">25,000 — 40,000 RWF</div>
+<a class="btn btn-brown" href="https://wa.me/243975417780?text=Bonjour%20JP%2C%20je%20veux%20le%20Tabouret%20JP%20Stool" data-en="Order" data-fr="Commander">Order</a>
+</div>
+</div>
+</div>
+
+<div class="section" id="orders">
+<h2 data-en="How to Order" data-fr="Comment Commander">How to Order</h2>
+<div class="box">
+<p data-en="1. Choose your product on WhatsApp / 2. Pay 50% deposit to start / 3. We build in 3-5 days / 4. Delivery in Kigali" data-fr="1. Choisis ton produit sur WhatsApp / 2. Paie 50% d'acompte pour commencer / 3. On fabrique en 3-5 jours / 4. Livraison à Kigali">1. Choose your product on WhatsApp / 2. Pay 50% deposit to start / 3. We build in 3-5 days / 4. Delivery in Kigali</p>
+</div>
+</div>
+
+<div class="section" id="contact">
+<h2 data-en="Contact Us" data-fr="Contactez-nous">Contact Us</h2>
+<div class="box">
+<p class="contact-line"><b>JP WOOD DESIGN - Kigali, Rwanda</b></p>
+<p class="contact-line">📱 WhatsApp: <a href="https://wa.me/243975417780">+243 975 417 780</a></p>
+<p class="contact-line">📧 Email: <a href="mailto:armandmunganga7@gmail.com">armandmunganga7@gmail.com</a></p>
+<p class="contact-line">📸 Instagram: @jpwooddesign</p>
+<input type="text" placeholder="Your name / Ton nom">
+<textarea placeholder="What do you want? / Que veux-tu commander?"></textarea>
+<a class="btn btn-brown" href="https://wa.me/243975417780" data-en="Send on WhatsApp" data-fr="Envoyer sur WhatsApp">Send on WhatsApp</a>
+<a class="btn btn-white" href="mailto:armandmunganga7@gmail.com" data-en="Send an Email" data-fr="Envoyer un Email">Send an Email</a>
+</div>
+</div>
+
+<footer>JP WOOD DESIGN • Kigali, Rwanda • WhatsApp +243 975 417 780 • armandmunganga7@gmail.com • © 2026 All rights reserved • EN / FR</footer>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    el.textContent = el.getAttribute('data-'+lang);
+  });
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  document.getElementById('btn-fr').classList.toggle('active', lang==='fr');
+}
+</script>
+</body>
+</html>
